@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado del IMC</title>
+</head>
+<body>
+    <h1>Resultado del IMC</h1>
+
+    <p><strong>Nombre:</strong> <span th:text="${usuario.nombreCompleto}"></span></p>
+    <p><strong>Edad:</strong> <span th:text="${usuario.edad}"></span></p>
+    <p><strong>Sexo:</strong> <span th:text="${usuario.sexo}"></span></p>
+    <p><strong>Estatura:</strong> <span th:text="${usuario.estatura} + ' m'"></span></p>
+    <p><strong>Peso:</strong> <span th:text="${usuario.peso} + ' kg'"></span></p>
+    <p><strong>IMC:</strong> <span th:text="${usuario.imc}"></span></p>
+    <p><strong>Clasificación:</strong> <span th:text="${usuario.clasificacion}"></span></p>
+
+    <a th:href="@{/}">Volver al inicio</a>
+</body>
+</html>
